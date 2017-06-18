@@ -1,0 +1,29 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^2.11.0",
+    "cls-bluebird": "^2.0.1",
+    "hackerearth-node": "^2.3.9",
+    "react": "^15.6.1",
+    "react-ace": "^5.0.1",
+    "react-codemirror": "^1.0.0",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.7.0",
+    "semantic-ui": "^2.2.10",
+    "semantic-ui-css": "^2.2.10",
+    "semantic-ui-react": "^0.68.5"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
