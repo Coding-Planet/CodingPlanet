@@ -11,7 +11,7 @@ const aboutOrg = () => (
     fluid color='green'
     description='We are a team of coders/developers and we have started Coding Planet with the aim of providing one stop platform for students/developers where they can find good quality material to boost up their coding skills. We will be providing best available resources at one point with guidance from mentors. We will be having a forum where you can ask your queries related to coding from the team and mentors we are having with us.'
 
-    style={{width:'80%',marginLeft:'auto',marginRight:'auto',textAlign:'center',marginTop:'10em'}}
+    style={{width:'80%',marginLeft:'auto',marginRight:'auto',textAlign:'center',marginTop:'2%'}}
   />
 )
 
@@ -52,7 +52,7 @@ class AboutUs1 extends Component {
     
     return (
         
-        <div className="AboutUs" >
+        <div className="AboutUs" style={{backgroundImage:'url(" + ../images/programming-world-map-on.jpg + ")', backgroundSize:'100%'}} >
 
         	{aboutOrg()}
 

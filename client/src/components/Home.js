@@ -5,9 +5,9 @@ class Home extends Component {
  
     return (
         
-        <div className="Home" style={{width:'100%',backgroundImage:'url(https://static.pexels.com/photos/355988/pexels-photo-355988.jpeg)',backgroundSize:'100%',backgroundPosition:'fixed',backgroundRepeat:'no-repeat'}}>
-        	<h1>Welcome</h1>
-        	<h1>Welcome</h1><h1>Welcome</h1><h1>Welcome</h1><h1>Welcome</h1><h1>Welcome</h1><h1>Welcome</h1>
+        <div className="Home" style={{width:'100%',backgroundImage:'url(C:/Users/Utsav/Downloads/gi.gif)',
+        backgroundSize:'100%',backgroundPosition:'fixed',backgroundRepeat:'no-repeat'}}>
+       
         </div>
         );
     }

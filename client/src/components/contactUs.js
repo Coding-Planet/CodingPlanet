@@ -6,7 +6,7 @@ import { Image} from 'semantic-ui-react'
 
 
 
-const head = () => (<div style={{marginLeft:'32.5em'}}>
+const head = () => (<div style={{marginLeft:'37%'}}>
 		<Segment raised size='massive' circular='true' inverted='true' >
  			 Better yet, drop us a message! 
 		</Segment>
@@ -14,13 +14,13 @@ const head = () => (<div style={{marginLeft:'32.5em'}}>
 	)
 	
 const fb = () => (
-		 <Button color='facebook' size='big' style={{marginTop:'2em', marginLeft:'20em'}}>
+		 <Button color='facebook' size='big' style={{marginTop:'3%', marginLeft:'30%'}}>
       <Icon name='facebook' /> Facebook
     	<a href= "https://www.facebook.com/codingplanet0"/>
     		</Button>
 	)
 const gp = () => (
-			<Button color='google plus' size='big' style={{marginLeft:'3em'}}  >
+			<Button color='google plus' size='big' style={{marginLeft:'3%'}}  >
       <Icon name='google plus' /> Google Plus
       <a href= "https://www.facebook.com/codingplanet0"/>
     </Button>
@@ -42,32 +42,32 @@ class contactUs extends Component {
   	}
 	render() {
 		return(
-		<div style={{backgroundImage:'url(https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2015/06/design-1200x633.jpg)'}} >
+		<div style={{backgroundImage:'url(https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2015/06/design-1200x633.jpg)', backgroundSize:'100%'}}>
 			<div> {head()}
 			{fb()}
 			{gp()}
-				<Button primary size='big' style={{marginLeft:'3em'}} onClick={this.onButtonClick}> Submit here </Button>
+				<Button primary size='big' style={{marginLeft:'3%'}} onClick={this.onButtonClick}> Submit here </Button>
 				{
 					this.state.showComponent? 
-			<div style={{ textAlign:'center'}}> <Input   style={{marginTop:'2em',display:'block'}}
+			<div style={{ textAlign:'center'}}> <Input   style={{marginTop:'2%',display:'block'}}
     			label={{ basic: true, content: 'Name' }}
 	    		labelPosition='left'
     			placeholder='Enter name...'
 	    		size='big'
 		  		/>
- 		 	<Input   style={{marginTop:'1em' ,display:'block'}}
+ 		 	<Input   style={{marginTop:'1%' ,display:'block'}}
     		label={{ basic: true, content: 'Email' }}
     		labelPosition='left'
     		placeholder='Enter email...'
     		size='big'
   			/>
-  			<Input style={{marginTop:'1em',display:'block'}}
+  			<Input style={{marginTop:'1%',display:'block'}}
     		label={{ basic: true, content: 'Query' }}
     		labelPosition='left'
     		placeholder='.......'
     		size='big'
  			/>
- 			<Button style={{marginTop:'1em'}} positive >Submit</Button>
+ 			<Button style={{marginTop:'1%'}} positive >Submit</Button>
  		</div>: null
 		}
 	</div>

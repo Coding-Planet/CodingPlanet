@@ -4,6 +4,7 @@ import App1 from './App1';
 import Home from './components/Home';
 import AboutUs1 from './components/AboutUs1';
 import contactUs from './components/contactUs';
+import dsAlgo from './components/dsAlgo';
 import Editor from './components/Editor';
 import Interview from './components/Interview';
 import './index.css';
@@ -27,7 +28,7 @@ ReactDOM.render(
 								<Route path="editor" component={Editor} ></Route>
 								<Route path="interview" component={Interview} >
 								</Route>
-								<Route path="dsAndAlgo" component={Interview} >
+								<Route path="dsAndAlgo" component={dsAlgo} >
 								</Route>
 								<Route path="contactUs" component={contactUs} >
 								</Route>	
