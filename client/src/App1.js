@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Menu,Grid,Dropdown } from 'semantic-ui-react'
 import {Link} from 'react-router';
 import logo from './images/codingplanet.png';
-
+import './index.css';
 let friendOptions = [
   {
     text: 'Jenny Hess',
@@ -10,11 +10,11 @@ let friendOptions = [
     image: { avatar: true, src: '/assets/images/avatar/small/jenny.jpg' },
   }
 ]
-export default class App1 extends Component {
-  
-  state = {}
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+export default class App1 extends Component {
+	state = {}
+
+	handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
     const { activeItem } = this.state
@@ -26,9 +26,9 @@ export default class App1 extends Component {
           <Grid.Column >
           <Menu stackable> 
             <Menu.Item name='lo'><img src={logo} /></Menu.Item>
-            <Menu.Item header>Coding Planet</Menu.Item>
+            <Menu.Item header> Coding Planet </Menu.Item>
             <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} >
-              <Link to="/">Home</Link></Menu.Item>       
+              <Link to="/">Home</Link></Menu.Item>
             <Menu.Item name='aboutUs' active={activeItem === 'aboutUs'} onClick={this.handleItemClick} >
               <Link to="aboutUs">About Us</Link></Menu.Item> 
             <Menu.Item name='interview' active={activeItem === 'interview'} onClick={this.handleItemClick} >

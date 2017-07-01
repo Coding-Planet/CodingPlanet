@@ -10,9 +10,8 @@ import Interview from './components/Interview';
 import './index.css';
 import store from './store/index.js';
 import {Provider} from 'react-redux';
-//import 'semantic/dist/semantic.min.css';
 import 'semantic-ui-css/semantic.min.css';
-import {Router, Route, IndexRoute} from 'react-router';
+import { Router, Route, IndexRoute} from 'react-router';
 import { hashHistory } from 'react-router';
 
 
@@ -26,8 +25,7 @@ ReactDOM.render(
 								<IndexRoute component={Home}></IndexRoute>
 								<Route path="aboutUs" component={AboutUs1}></Route>
 								<Route path="editor" component={Editor} ></Route>
-								<Route path="interview" component={Interview} >
-								</Route>
+								<Route path="interview" component={Interview} />
 								<Route path="dsAndAlgo" component={dsAlgo} >
 								</Route>
 								<Route path="contactUs" component={contactUs} >
