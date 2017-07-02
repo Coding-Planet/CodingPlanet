@@ -96,8 +96,9 @@ class contactUs extends Component {
 
 	render() {
 		return(
-		<div  style={{minHeight:'90vh',backgroundImage:'url(https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2015/06/design-1200x633.jpg)', backgroundSize:'100%'}}>
-			<div> 
+    <div style={{backgroundColor:'black'}}>
+		<div  style={{opacity:'0.5',minHeight:'90vh',backgroundImage:'url(https://static.pexels.com/photos/230557/pexels-photo-230557.jpeg)', backgroundSize:'100%',backgroundRepeat:'no-repeat'}}>
+			<div  >  
 			<center> {head()} </center><br/>
 			<center> {fb()} </center><br/>
 			<center> {gp()} </center><br/>
@@ -115,6 +116,7 @@ class contactUs extends Component {
  		</div>: null }
 		</div>
 	</div>
+  </div>
 		);
 	}
 };

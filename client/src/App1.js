@@ -42,14 +42,7 @@ export default class App1 extends Component {
           </Grid.Row>
           </Grid>
 
-            <Grid>
-        <Grid.Row centered column={12} only="mobile" style={{margin:'10px'}}>
-          <Grid.Column >
-            <Dropdown placeholder='Menu' fluid selection options={friendOptions} />
-
-           </Grid.Column>
-          </Grid.Row>
-          </Grid>
+            
 
           <div className="Content" >
           {this.props.children}

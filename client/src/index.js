@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App1 from './App1';
 import Home from './components/Home';
+import Admin from './components/Admin';
 import AboutUs1 from './components/AboutUs1';
 import contactUs from './components/contactUs';
 import dsAlgo from './components/dsAlgo';
@@ -12,13 +13,13 @@ import store from './store/index.js';
 import {Provider} from 'react-redux';
 import 'semantic-ui-css/semantic.min.css';
 import { Router, Route, IndexRoute} from 'react-router';
-import { hashHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 
 
 ReactDOM.render(
 				<Provider store={store}>
 						
-						<Router history={hashHistory}>
+						<Router history={browserHistory}>
 
 							<Route path="/" component={App1}>
 								
@@ -32,6 +33,7 @@ ReactDOM.render(
 								</Route>	
 
 							</Route>
+							<Route path="admin" component={Admin} />
 						
 						</Router>
 				</Provider>,
